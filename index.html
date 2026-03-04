@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existential Kernel</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --fg: #c9d1d9;
+            --accent: #58a6ff;
+            --muted: #8b949e;
+            --surface: #161b22;
+            --border: #30363d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--accent); }
+        .subtitle { color: var(--muted); font-size: 1.2rem; margin-bottom: 2rem; }
+        p { margin-bottom: 1rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .kernel-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .kernel-table th, .kernel-table td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .kernel-table th { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; }
+        .kernel-table td:first-child { font-weight: 600; white-space: nowrap; }
+        .layers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .layer {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .layer h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .layer p { font-size: 0.9rem; color: var(--muted); margin: 0; }
+        .traditions { list-style: none; }
+        .traditions li { padding: 0.25rem 0; }
+        .traditions li::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-right: 0.5rem; }
+        .scope-chain {
+            font-family: monospace;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 1rem;
+            color: var(--accent);
+        }
+        .repos { margin: 1rem 0; }
+        .repo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .repo-name { font-weight: 600; }
+        .repo-desc { color: var(--muted); font-size: 0.9rem; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Existential Kernel</h1>
+        <p class="subtitle">A composable ontology framework for AI agents and human systems.</p>
+
+        <p>An existential kernel is a minimal set of universal terms that ground all context &mdash; from the broadest scope (Existence itself) to the narrowest (a single project). It bridges philosophy with systems thinking, giving AI agents and humans a shared vocabulary for scoping, context, and resolution.</p>
+
+        <h2>The 14-Term Kernel</h2>
+        <table class="kernel-table">
+            <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+            <tbody>
+                <tr><td>Existence</td><td>Everything that &lsquo;is&rsquo;; the universal set containing all entities</td></tr>
+                <tr><td>Entity</td><td>Any information in Existence &mdash; abstractions, persons, systems, objects</td></tr>
+                <tr><td>Abstraction</td><td>A concept modeling something else without its complexity</td></tr>
+                <tr><td>Scope</td><td>Breadth, depth, or reach of a perspective; bounds what&rsquo;s relevant</td></tr>
+                <tr><td>Context</td><td>Scope applied to abstractions; limits information needed for coherent systems</td></tr>
+                <tr><td>Resolution</td><td>Level of detail and granularity; zoom in/out to observe patterns</td></tr>
+                <tr><td>Pattern</td><td>Elements that repeat in a predictable manner; transferable across domains</td></tr>
+                <tr><td>System</td><td>An entity viewed from an internalized perspective; a whole of relationships</td></tr>
+                <tr><td>Domain</td><td>A bounded system of interest with associated language</td></tr>
+                <tr><td>Focus</td><td>Finite attention applied to a scope; enables efficient energy use</td></tr>
+                <tr><td>Perspective</td><td>A viewpoint on a system; influences reality; all entities have one</td></tr>
+                <tr><td>Consciousness</td><td>An entity&rsquo;s ability to interpret relevant signals; being present</td></tr>
+                <tr><td>Evolution</td><td>How an entity alters in response to context; the universal pattern of change</td></tr>
+                <tr><td>Story</td><td>A sequence of events holding state that creates context</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Architecture</h2>
+        <div class="layers">
+            <div class="layer">
+                <h3>Layer 0: Kernel</h3>
+                <p>14 universal terms, always loaded. The existential scope.</p>
+            </div>
+            <div class="layer">
+                <h3>Layer 1: Ontology</h3>
+                <p>Extended nodes &mdash; Ontology, Axiology, Epistemology for each term.</p>
+            </div>
+            <div class="layer">
+                <h3>Layer 2: Domain Overlays</h3>
+                <p>Project-specific terms that extend the kernel. Scoped context.</p>
+            </div>
+        </div>
+
+        <h2>Composable Scoping</h2>
+        <div class="scope-chain">Existence &rarr; Domain &rarr; Project &rarr; Focus</div>
+        <p>Each level inherits from above and adds domain-specific terms. An AI agent reads the relevant scope, applies the terms, and maintains coherence across sessions.</p>
+
+        <h2>Philosophical Lineage</h2>
+        <ul class="traditions">
+            <li><strong>Process philosophy</strong> (Whitehead) &mdash; evolution, systems, relationships</li>
+            <li><strong>Phenomenology</strong> (Husserl) &mdash; focus, perspective, consciousness, context</li>
+            <li><strong>Information-theoretic ontology</strong> &mdash; entity as information, resolution, patterns</li>
+            <li><strong>Existentialism</strong> (Heidegger, Sartre) &mdash; project, story, consciousness as situated</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <div class="repos">
+            <div class="repo">
+                <div>
+                    <div class="repo-name"><a href="https://github.com/existential-kernel/ontology">ontology</a></div>
+                    <div class="repo-desc">Reference existential ontology &mdash; the 14-term kernel + extended nodes</div>
+                </div>
+            </div>
+            <div class="repo">
+                <div>
+                    <div class="repo-name"><a href="https://github.com/existential-kernel/exkernel">exkernel</a></div>
+                    <div class="repo-desc">CLI tool for ontology management, validation, and composable scoping</div>
+                </div>
+            </div>
+            <div class="repo">
+                <div>
+                    <div class="repo-name"><a href="https://github.com/existential-kernel/spec">spec</a></div>
+                    <div class="repo-desc">Node format specification and templates</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="https://github.com/existential-kernel">GitHub</a> &middot; Apache-2.0</p>
+        </footer>
+    </div>
+</body>
+</html>
